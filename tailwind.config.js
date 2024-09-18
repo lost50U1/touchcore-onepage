@@ -13,6 +13,7 @@ export default {
       colors: {
         textGray: "#6D7C94",
         bgSecondary: "#1E61DC",
+        lightBlue: "#E7F6FF",
       },
     },
   },
