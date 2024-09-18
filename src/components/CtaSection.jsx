@@ -11,6 +11,7 @@ const CtaSection = () => {
               Sell flights, hotels, and tours from about the world.
             </p>
           </div>
+          {/* contact links */}
           <div className="flex flex-col lg:flex-row lg:items-center gap-4">
             <a
               className="font-poppins bg-bgSecondary hover:bg-white focus:bg-white hover:text-bgSecondary focus:text-bgSecondary border-2 hover:border-bgSecondary focus:border-bgSecondary text-lightGray font-bold text-base md:text-2xl py-4 px-[1.15625rem] rounded-lg"
