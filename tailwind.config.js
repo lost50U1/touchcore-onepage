@@ -14,6 +14,8 @@ export default {
         textGray: "#6D7C94",
         bgSecondary: "#1E61DC",
         lightBlue: "#E7F6FF",
+        lighterBlue: "#F0F6FC",
+        lightGray: "#E8F4FF",
       },
     },
   },
