@@ -1,5 +1,4 @@
 // import icons and images
-
 import {
   clockImg,
   flighticonImg,
@@ -9,61 +8,84 @@ import {
 } from "../../utils";
 
 // import mockdata as an api
-
 import { flights } from "../../context/mockData";
 
 const BookDisplay = () => {
   return (
     <div className="bg-lightBlue py-6 pl-6 rounded-2xl flex flex-col">
       <div className="shadow-lg">
+        {/* Flight details header section */}
         <div className="bg-lightBlue py-2 pl-4 shadow-lg flex flex-wrap w-full items-center justify-between gap-2 text-xs min-h-[2.5625rem]">
+          {/* Airline logo */}
           <div>
-            <img src={turkish2Img} alt="turkish logo" />
+            <img src={turkish2Img} alt="Turkish Airlines logo" />
           </div>
-          <p className="font-bold">{flights[0].airlineCode}</p>
-          <p className="font-bold">{flights[0].flightNumber}</p>
-          <p className="font-bold">
+          {/* Airline Code */}
+          <p className="font-bold" aria-label="Airline code">
+            {flights[0].airlineCode}
+          </p>
+          {/* Flight Number */}
+          <p className="font-bold" aria-label="Flight number">
+            {flights[0].flightNumber}
+          </p>
+          {/* Departure and arrival airport codes */}
+          <p className="font-bold" aria-label="Departure and Arrival codes">
             {flights[0].departureCode} - {flights[2].departureCode}
           </p>
-          <p className="font-bold">
+          {/* Departure and arrival times */}
+          <p className="font-bold" aria-label="Departure and Arrival times">
             {flights[0].departureTime} - {flights[0].arrivalTime}
           </p>
-          <p className="font-bold">{flights[0].timeofArrival}</p>
+          {/* Time of Arrival */}
+          <p className="font-bold" aria-label="Time of arrival">
+            {flights[0].timeofArrival}
+          </p>
         </div>
+
+        {/* Flight details body section */}
         <div className="bg-white py-4 px-4 sm:px-[1.979375rem] flex justify-end gap-4">
+          {/* Departure details */}
           <div className="text-end">
-            <p className="font-bold">{flights[0].departureTime}</p>
+            <p className="font-bold" aria-label="Departure time">
+              {flights[0].departureTime}
+            </p>
             <p className="text-xs text-textGray2">{flights[0].departure}</p>
           </div>
+
+          {/* Flight journey details */}
           <div className="flex flex-col justify-center items-center">
             <div className="flex items-center">
-              <div>
-                <img src={lefticonImg} alt="lefticon" />
-              </div>
+              {/* Left icon indicating departure */}
+              <img src={lefticonImg} alt="Left icon indicating departure" />
               <div className="flex items-center bg-lightestGray py-1 rounded-lg">
-                <div>
-                  <img src={flighticonImg} alt="flighticon" />
-                </div>
-                <p className="text-[0.625rem] text-bgSecondary">
+                {/* Flight icon indicating number of stops */}
+                <img
+                  src={flighticonImg}
+                  alt="Flight icon indicating flight stops"
+                />
+                <p
+                  className="text-[0.625rem] text-bgSecondary"
+                  aria-label="Number of stops"
+                >
                   {flights[0].stops}
                 </p>
               </div>
-              <div>
-                <img src={righticonImg} alt="righticon" />
-              </div>
+              {/* Right icon indicating arrival */}
+              <img src={righticonImg} alt="Right icon indicating arrival" />
             </div>
+            {/* Flight duration details */}
             <div className="flex items-center gap-1">
-              <div>
-                <img src={clockImg} alt="clock" />
-              </div>
+              <img src={clockImg} alt="Clock icon indicating flight duration" />
               <p className="text-xs">{flights[0].duration}</p>
             </div>
           </div>
         </div>
       </div>
-      <p className="font-bold text-base md:text-2xl mt-6 mb-4 text-start pr-6">
+
+      {/* Booking section */}
+      <h3 className="font-bold text-base md:text-2xl mt-6 mb-4 text-start pr-6">
         Book
-      </p>
+      </h3>
       <p className="text-darkGray text-start pr-6">
         Capture all relevant details from your customer in a one-step checkout
       </p>

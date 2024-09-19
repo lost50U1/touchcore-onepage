@@ -17,9 +17,9 @@ const Travel = () => {
                   {card.id}
                 </div>
                 <div className="sm:text-start">
-                  <p className="font-bold text-base md:text-2xl mb-2">
+                  <h3 className="font-bold text-base md:text-2xl mb-2">
                     {card.title}
-                  </p>
+                  </h3>
                   <p className="text-textGray">{card.description}</p>
                 </div>
               </div>

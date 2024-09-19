@@ -112,9 +112,9 @@ const SearchDisplay = () => {
         </div>
       </div>
 
-      <h2 className="font-bold text-base md:text-2xl mt-6 mb-4 text-start pr-6">
+      <h3 className="font-bold text-base md:text-2xl mt-6 mb-4 text-start pr-6">
         Search
-      </h2>
+      </h3>
       <p className="text-darkGray text-start pr-6">
         Make searching flights an intuitive experience for your customers.
       </p>
