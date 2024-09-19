@@ -13,7 +13,7 @@ const Header = () => {
             Customize your travel website, and start selling. Let’s get your
             business off the ground with our intuitive tools!
           </p>
-          <button className="bg-bgSecondary hover:bg-white focus:bg-white hover:text-bgSecondary focus:text-bgSecondary border-2 border-bgSecondary py-4 px-6 text-base md:text-lg rounded-lg font-poppins w-1/2 md:w-1/4">
+          <button className="bg-bgSecondary hover:bg-white focus:bg-white hover:text-bgSecondary focus:text-bgSecondary border-2 border-bgSecondary py-4 px-6 text-base lg:text-lg rounded-lg font-poppins w-1/2 md:w-1/4">
             Try it now
           </button>
         </div>

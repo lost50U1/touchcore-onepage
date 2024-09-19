@@ -1,3 +1,5 @@
+// import icons and images
+
 import {
   clockImg,
   flighticonImg,
@@ -5,6 +7,10 @@ import {
   righticonImg,
   turkish2Img,
 } from "../../utils";
+
+// import mockdata as an api
+
+import { flights } from "../../context/mockData";
 
 const BookDisplay = () => {
   return (
@@ -14,18 +20,20 @@ const BookDisplay = () => {
           <div>
             <img src={turkish2Img} alt="turkish logo" />
           </div>
-          <p className="font-bold">VS</p>
-          <p className="font-bold">411</p>
-          <p className="font-bold">LOS - LHR</p>
-          <p className="font-bold">10:30PM - 05:25PM +1</p>
-          <p className="font-bold">06:55</p>
+          <p className="font-bold">{flights[0].airlineCode}</p>
+          <p className="font-bold">{flights[0].flightNumber}</p>
+          <p className="font-bold">
+            {flights[0].departureCode} - {flights[2].departureCode}
+          </p>
+          <p className="font-bold">
+            {flights[0].departureTime} - {flights[0].arrivalTime}
+          </p>
+          <p className="font-bold">{flights[0].timeofArrival}</p>
         </div>
         <div className="bg-white py-4 px-4 sm:px-[1.979375rem] flex justify-end gap-4">
           <div className="text-end">
-            <p className="font-bold">10:30</p>
-            <p className="text-xs text-textGray2">
-              Murtala Muhammed (LOS) Lagos
-            </p>
+            <p className="font-bold">{flights[0].departureTime}</p>
+            <p className="text-xs text-textGray2">{flights[0].departure}</p>
           </div>
           <div className="flex flex-col justify-center items-center">
             <div className="flex items-center">
@@ -36,7 +44,9 @@ const BookDisplay = () => {
                 <div>
                   <img src={flighticonImg} alt="flighticon" />
                 </div>
-                <p className="text-[0.625rem] text-bgSecondary">1 stop</p>
+                <p className="text-[0.625rem] text-bgSecondary">
+                  {flights[0].stops}
+                </p>
               </div>
               <div>
                 <img src={righticonImg} alt="righticon" />
@@ -46,7 +56,7 @@ const BookDisplay = () => {
               <div>
                 <img src={clockImg} alt="clock" />
               </div>
-              <p className="text-xs">12h 14m</p>
+              <p className="text-xs">{flights[0].duration}</p>
             </div>
           </div>
         </div>

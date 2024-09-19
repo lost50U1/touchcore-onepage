@@ -1,3 +1,5 @@
+// import icons and images
+
 import {
   blueseatImg,
   grayseatImg,
@@ -5,14 +7,30 @@ import {
   turkishImg,
 } from "../../utils";
 
+// import mockdata as an api
+
+import { seatSelections, flights } from "../../context/mockData";
+
+// import context api and data
+
+import { useBooking } from "../../context/useBooking";
+
 const AncillariesDisplay = () => {
+  const { setSelectedSeat } = useBooking();
   return (
     <div className="bg-lightBlue py-6 pl-6 rounded-2xl flex flex-col">
       <div className="shadow-lg">
         <div className="bg-lightBlue py-[0.875rem] pl-4 shadow-lg flex w-full text-xs justify-between">
           <div className="flex">
-            <select className="bg-bgSecondary text-white text-[0.5rem] p-[0.125] rounded-sm">
-              <option>Select Seat</option>
+            <select
+              onChange={(e) => setSelectedSeat(e.target.value)}
+              className="bg-bgSecondary text-white text-[0.5rem] p-[0.125] rounded-sm"
+            >
+              {seatSelections.map((option, index) => (
+                <option key={index} value={option}>
+                  {option}
+                </option>
+              ))}
             </select>
             <div className="w-4 h-auto">
               <img
@@ -22,8 +40,8 @@ const AncillariesDisplay = () => {
               />
             </div>
           </div>
-          <p className="font-bold">VS</p>
-          <p className="font-bold">411</p>
+          <p className="font-bold">{flights[0].airlineCode}</p>
+          <p className="font-bold">{flights[0].flightNumber}</p>
           <div className="flex items-center gap-2 w-1/2">
             <div className="rounded-lg py-1 bg-ligherGray w-1/2"></div>
             <div className="flex items-center gap-[0.125rem] w-1/2">
