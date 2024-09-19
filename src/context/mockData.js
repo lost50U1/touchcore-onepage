@@ -1,5 +1,6 @@
 export const flights = [
   {
+    id: 1,
     airlineCode: "VS",
     flightNumber: "411",
     destination: "Lagos",
@@ -20,6 +21,7 @@ export const flights = [
     timeofArrival: "06:55",
   },
   {
+    id: 2,
     airlineCode: "DL",
     flightNumber: "205",
     destination: "New York",
@@ -39,6 +41,7 @@ export const flights = [
     wiFiAvailability: "Yes",
   },
   {
+    id: 3,
     airlineCode: "BA",
     flightNumber: "179",
     destination: "London",
@@ -58,6 +61,7 @@ export const flights = [
     wiFiAvailability: "No",
   },
   {
+    id: 4,
     airlineCode: "AF",
     flightNumber: "355",
     destination: "Paris",
@@ -79,7 +83,6 @@ export const flights = [
 ];
 
 export const returnOptions = ["Return", "No Return"];
-
 export const seatSelections = [
   "Select Seat",
   "A",
@@ -91,24 +94,18 @@ export const seatSelections = [
   "G",
   "H",
 ];
-
 export const stopsOptions = ["1 stop", "2 stops", "Non-stop"];
-
 export const airlines = ["Airline A", "Airline B", "Airline C", "Airline D"];
-
 export const flightClasses = [
   "Economy",
   "Premium Economy",
   "Business",
   "First Class",
 ];
-
 export const baggageOptions = [
   "1 checked bag, 1 carry-on",
   "2 checked bags, 1 carry-on",
   "No checked bag, 1 carry-on",
 ];
-
 export const mealOptions = ["Included", "Not included"];
-
 export const wiFiAvailabilityOptions = ["Yes", "No"];
