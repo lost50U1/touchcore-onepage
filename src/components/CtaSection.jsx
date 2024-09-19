@@ -2,7 +2,7 @@ const CtaSection = () => {
   return (
     <section className="pb-24">
       <div className="container text-center w-5/6">
-        <div className="bg-lighterBlue rounded-2xl flex flex-col sm:flex-row gap-4 items-center sm:justify-between shadow-2xl p-[3.75rem]">
+        <div className="bg-lighterBlue rounded-2xl flex flex-col sm:flex-row gap-4 items-center sm:justify-between shadow-2xl p-8 sm:p-[3.75rem]">
           <div className="flex flex-col items-start">
             <h3 className="font-bold text-xl sm:text-3xl mb-2">
               Get your website today!

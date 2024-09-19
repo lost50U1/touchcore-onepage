@@ -40,12 +40,12 @@ const PlatformSections = () => {
               </h3>
               <p className="text-textGray">
                 We take care of the intricate details of travel expertise,
-                accreditation, and airline partnerships, so you don't have to—no
-                need for additional development resources. Your customers can
-                easily book flights with over 900 top airlines worldwide, along
-                with accommodations, tours, and insurance. We save you time and
-                resources so that you can focus on what matters most - running
-                your business.
+                accreditation, and airline partnerships, so you don&apos;t have
+                to—no need for additional development resources. Your customers
+                can easily book flights with over 900 top airlines worldwide,
+                along with accommodations, tours, and insurance. We save you
+                time and resources so that you can focus on what matters most -
+                running your business.
               </p>
             </div>
           </div>
