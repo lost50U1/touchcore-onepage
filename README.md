@@ -17,4 +17,4 @@
 
 - **Install Node Modules**: install node modules by running npm install in your terminal inside your project.
 - **Command to run project**: type npm run dev on you terminal and access the website using http://localhost:5173/
-- **For Testing:** react testing dependencies are installed so you can run npm test to test
+- **For Testing:** react testing dependencies are installed so you can run npm run test to test
