@@ -32,7 +32,7 @@ const PlatformSections = () => {
           <div className="flex flex-col-reverse sm:flex-row gap-6 items-center sm:justify-between">
             {/* Side Image */}
             <div className="w-full sm:w-1/2">
-              <img src={frame2Img} alt="link template" />
+              <img src={frame2Img} alt="link template2" />
             </div>
             <div className="flex flex-col text-start w-full sm:w-1/2">
               <h3 className="font-bold text-xl sm:text-3xl mb-2">
@@ -68,7 +68,7 @@ const PlatformSections = () => {
             </div>
             {/* Side Image */}
             <div className="w-full sm:w-1/2">
-              <img src={frame3Img} alt="link template" />
+              <img src={frame3Img} alt="link template3" />
             </div>
           </div>
         </div>
