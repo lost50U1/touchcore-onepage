@@ -18,7 +18,22 @@ describe("SearchDisplay Component", () => {
     // Simulate a change event to select a different return option
     fireEvent.change(returnSelect, { target: { value: "No Return" } });
 
-    // Assert that the selected value is updated correctly
     expect(returnSelect.value).toBe("No Return");
+
+    // Find the select element for seat options
+    const seatSelect = screen.getByLabelText("Seat selection");
+
+    // Simulate a change event to select a different seat option
+    fireEvent.change(seatSelect, { target: { value: "A" } });
+
+    expect(seatSelect.value).toBe("A");
+
+    // Find the select element for seat options
+    const stopsSelect = screen.getByLabelText("Stops option");
+
+    // Simulate a change event to select a different seat option
+    fireEvent.change(stopsSelect, { target: { value: "2 stop" } });
+
+    expect(stopsSelect.value).toBe("2 stop");
   });
 });
