@@ -43,7 +43,7 @@ const BookDisplay = () => {
         </div>
 
         {/* Flight details body section */}
-        <div className="bg-white py-4 px-4 sm:px-[1.979375rem] flex justify-end gap-4">
+        <div className="bg-white py-4 px-4 sm:px-7 flex flex-col items:end md:justify-end md:flex-row gap-1 w-full">
           {/* Departure details */}
           <div className="text-end">
             <p className="font-bold" aria-label="Departure time">
@@ -57,7 +57,7 @@ const BookDisplay = () => {
             <div className="flex items-center">
               {/* Left icon indicating departure */}
               <img src={lefticonImg} alt="Left icon indicating departure" />
-              <div className="flex items-center bg-lightestGray py-1 rounded-lg">
+              <div className="inline-flex items-center bg-lightestGray py-1 rounded-lg min-w-max">
                 {/* Flight icon indicating number of stops */}
                 <img
                   src={flighticonImg}

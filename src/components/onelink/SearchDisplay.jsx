@@ -23,7 +23,7 @@ const SearchDisplay = () => {
   return (
     <div className="bg-lightBlue py-6 pl-6 rounded-2xl flex flex-col">
       <div className="shadow-lg">
-        <div className="bg-lightBlue py-1 pl-4 pr-2 shadow-lg flex flex-wrap w-full justify-between gap-2 text-xs min-h-[2.5625rem] font-bold">
+        <div className="bg-lightBlue py-1 pl-4 pr-2 shadow-lg flex flex-wrap w-full justify-between gap-1 text-xs min-h-[2.5625rem] font-bold">
           {/* Return option select */}
           <label htmlFor="returnSelect" className="sr-only">
             Return
@@ -31,7 +31,7 @@ const SearchDisplay = () => {
           <select
             id="returnSelect"
             onChange={(e) => setSelectedReturn(e.target.value)}
-            className="bg-lightBlue p-2"
+            className="bg-lightBlue py-1 lg:w-[22%] rounded-sm"
             aria-label="Return option"
           >
             {returnOptions.map((option, index) => (
@@ -48,7 +48,7 @@ const SearchDisplay = () => {
           <select
             id="seatSelect"
             onChange={(e) => setSelectedSeat(e.target.value)}
-            className="bg-bgSecondary text-white px-2 py-1 rounded-sm"
+            className="bg-bgSecondary text-white p-1 rounded-sm"
             aria-label="Seat selection"
           >
             {seatSelections.map((option, index) => (
@@ -65,7 +65,7 @@ const SearchDisplay = () => {
           <select
             id="stopsSelect"
             onChange={(e) => setSelectedStop(e.target.value)}
-            className="bg-white p-2"
+            className="bg-white p-1 rounded-sm lg:w-[22%]"
             aria-label="Stops option"
           >
             {stopsOptions.map((option, index) => (
@@ -76,12 +76,16 @@ const SearchDisplay = () => {
           </select>
 
           {/* Airline button */}
-          <button className="bg-white p-2" aria-label="Select airline">
+          <button
+            className="bg-white p-1 rounded-sm lg:w-[22%]"
+            aria-label="Select airline"
+          >
             Airline
           </button>
         </div>
 
-        <div className="bg-white py-4 px-4 sm:px-[1.979375rem] flex justify-end gap-4">
+        <div className="bg-white py-4 px-4 sm:px-7 flex flex-col items:end md:justify-end md:flex-row gap-1 w-full">
+          {/* Departure details */}
           <div className="text-end">
             <p className="font-bold">{flights[0].departureTime}</p>
             <p className="text-xs text-textGray2">{flights[0].departure}</p>
@@ -90,7 +94,7 @@ const SearchDisplay = () => {
             <div className="flex items-center">
               {/* Left icon indicating departure */}
               <img src={lefticonImg} alt="Left icon indicating departure" />
-              <div className="flex items-center bg-lightestGray py-1 rounded-lg">
+              <div className="inline-flex items-center bg-lightestGray py-1 rounded-lg min-w-max">
                 {/* Flight icon indicating flight details */}
                 <img
                   src={flighticonImg}

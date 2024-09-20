@@ -11,7 +11,7 @@ const OneLink = () => {
     // Provide global booking context
     <BookingProvider>
       {/* Main content section */}
-      <section className="mb-24">
+      <section className="mb-24 mt-12">
         <div className="container text-center w-5/6">
           {/* Page heading */}
           <h2 className="text-2xl font-bold md:text-4xl mb-8">

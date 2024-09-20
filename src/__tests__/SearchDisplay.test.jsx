@@ -32,8 +32,8 @@ describe("SearchDisplay Component", () => {
     const stopsSelect = screen.getByLabelText("Stops option");
 
     // Simulate a change event to select a different seat option
-    fireEvent.change(stopsSelect, { target: { value: "2 stop" } });
+    fireEvent.change(stopsSelect, { target: { value: "2 stops" } });
 
-    expect(stopsSelect.value).toBe("2 stop");
+    expect(stopsSelect.value).toBe("2 stops");
   });
 });
